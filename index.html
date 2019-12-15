@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>[Insert Final Project Name]</title>
+<title>Sound It Out</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,55 +13116,18 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="[Clever-Title]">[Clever Title]<a class="anchor-link" href="#[Clever-Title]">&#182;</a></h1>
+<h1 id="Sound-it-Out">Sound it Out<a class="anchor-link" href="#Sound-it-Out">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="[Cool-Subtitle]">[Cool Subtitle]<a class="anchor-link" href="#[Cool-Subtitle]">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Project-Members:-Diana-Chou,-Max-Scribner,-Lewis-Qualkenbush">Project Members: Diana Chou, Max Scribner, Lewis Qualkenbush<a class="anchor-link" href="#Project-Members:-Diana-Chou,-Max-Scribner,-Lewis-Qualkenbush">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Table-of-Contents:">Table of Contents:<a class="anchor-link" href="#Table-of-Contents:">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-    <li><a href='introduction</li>
-    <li>Data Munging</li>
-    <li>Data Exploration and Analysis</li>
-    <li>Conclusion</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='introduction'></a></p>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><em>Introduction Text</em></p>
+<p><i>
+Diana Chou, Max Scribner, Lewis Qualkenbush<br>   
+CMSC320 Final Tutorial<br>
+Fall 2019 Semester
+</i></p>
 
 </div>
 </div>
@@ -13172,6 +13135,67 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Without-any-given-context,-would-you-able-to-say-a-word-properly-just-by-reading-it?-To-what-extent-can-we-predict-the-pronounciation-of-a-word-from-its-spelling?">Without any given context, would you able to say a word properly just by reading it? To what extent can we predict the pronounciation of a word from its spelling?<a class="anchor-link" href="#Without-any-given-context,-would-you-able-to-say-a-word-properly-just-by-reading-it?-To-what-extent-can-we-predict-the-pronounciation-of-a-word-from-its-spelling?">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Table of Contents</h3><p><a href="#0">Introduction</a></p>
+<p><a href="#1">Goal</a></p>
+<p><a href="#2">Data Wrangling</a><br>
+    <a href="#2-1">Cleaning the Data</a><br>
+    <a href="#2-2">Finding Unique Characters for Analysis</a><br>
+    <a href="#2-3">Finding the Distributions of Letters and Phonemes Within the Data</a><br></p>
+<p><a href="#3">Data Exploration and Analysis</a><br>
+    <a href="#3-1">Intra-word Co-occurence Map</a><br>
+    <a href="#3-2">Finding Clusters Within Words</a><br>
+    <a href="#3-3">Preparing Data with Clustering</a><br>
+    <a href="#3-4">Intra-cluster Co-occurence Map</a><br>
+    <a href="#3-5">Incompatible Clustering Analysis</a><br></p>
+<p><a href="#4">Decision Tree Model</a></p>
+<p><a href="#5">Conclusion</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='0'></a></p>
+<h3 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Text</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='1'></a></p>
+<h3 id="Goal">Goal<a class="anchor-link" href="#Goal">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Text</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='2'></a></p>
 <h3 id="Data-Wrangling">Data Wrangling<a class="anchor-link" href="#Data-Wrangling">&#182;</a></h3>
 </div>
 </div>
@@ -13179,7 +13203,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Reading-the-Data">Reading the Data<a class="anchor-link" href="#Reading-the-Data">&#182;</a></h4>
+<p><a id='2-1'></a></p>
+<h4 id="Cleaning-the-Data">Cleaning the Data<a class="anchor-link" href="#Cleaning-the-Data">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Some cleanup of the data was required before the analysis step. There are stress marking ('), long vowel (:), and secondary stress marking (ˌ) characters included in the data that are not important to our analysis, so these are cut out of the word transcriptions. Our code does not work with capitalized letters, so words with capitalized letters had to be changed to lowercase.</p>
+
 </div>
 </div>
 </div>
@@ -13222,7 +13255,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='2-2'></a></p>
 <h4 id="Find-Unique-Characters-for-Analysis">Find Unique Characters for Analysis<a class="anchor-link" href="#Find-Unique-Characters-for-Analysis">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the purposes of mapping spellings of words to their pronunciations, we needed to explore the data and find all of the unique characters that are within the set of orthographic symbols and phonological symbols. This will be helpful for when we are mapping later.</p>
+
 </div>
 </div>
 </div>
@@ -13290,8 +13332,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;l&#39;, &#39;z&#39;, &#39;v&#39;, &#39;m&#39;, &#39;y&#39;, &#39;p&#39;, &#39;c&#39;, &#39;r&#39;, &#39;i&#39;, &#39;a&#39;, &#39;o&#39;, &#39;d&#39;, &#39;s&#39;, &#39;x&#39;, &#39;b&#39;, &#39;n&#39;, &#39;h&#39;, &#39;g&#39;, &#39;k&#39;, &#39;j&#39;, &#39;w&#39;, &#39;e&#39;, &#39;q&#39;, &#39;f&#39;, &#39;t&#39;, &#39;u&#39;}
-{&#39;ɜ&#39;, &#39;l&#39;, &#39;z&#39;, &#39;ŋ&#39;, &#39;m&#39;, &#39;ɑ&#39;, &#39;θ&#39;, &#39;p&#39;, &#39;i&#39;, &#39;ɒ&#39;, &#39;h&#39;, &#39;j&#39;, &#39;ʃ&#39;, &#39;e&#39;, &#39;f&#39;, &#39;æ&#39;, &#39;u&#39;, &#39;ʌ&#39;, &#39;v&#39;, &#39;ð&#39;, &#39;r&#39;, &#39;a&#39;, &#39;d&#39;, &#39;s&#39;, &#39;ʊ&#39;, &#39;b&#39;, &#39;n&#39;, &#39;g&#39;, &#39;ɔ&#39;, &#39;k&#39;, &#39;ə&#39;, &#39;ʒ&#39;, &#39;w&#39;, &#39;ɪ&#39;, &#39;t&#39;}
+<pre>{&#39;b&#39;, &#39;x&#39;, &#39;u&#39;, &#39;e&#39;, &#39;m&#39;, &#39;d&#39;, &#39;c&#39;, &#39;h&#39;, &#39;p&#39;, &#39;i&#39;, &#39;r&#39;, &#39;l&#39;, &#39;w&#39;, &#39;k&#39;, &#39;s&#39;, &#39;j&#39;, &#39;t&#39;, &#39;f&#39;, &#39;v&#39;, &#39;q&#39;, &#39;n&#39;, &#39;y&#39;, &#39;z&#39;, &#39;o&#39;, &#39;a&#39;, &#39;g&#39;}
+{&#39;b&#39;, &#39;m&#39;, &#39;u&#39;, &#39;h&#39;, &#39;p&#39;, &#39;i&#39;, &#39;θ&#39;, &#39;w&#39;, &#39;k&#39;, &#39;s&#39;, &#39;ə&#39;, &#39;ɒ&#39;, &#39;ð&#39;, &#39;j&#39;, &#39;f&#39;, &#39;æ&#39;, &#39;v&#39;, &#39;ʃ&#39;, &#39;n&#39;, &#39;ɜ&#39;, &#39;ɔ&#39;, &#39;ŋ&#39;, &#39;z&#39;, &#39;ʌ&#39;, &#39;e&#39;, &#39;ɑ&#39;, &#39;d&#39;, &#39;r&#39;, &#39;l&#39;, &#39;ɪ&#39;, &#39;ʒ&#39;, &#39;t&#39;, &#39;ʊ&#39;, &#39;a&#39;, &#39;g&#39;}
 </pre>
 </div>
 </div>
@@ -13303,7 +13345,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='2-3'></a></p>
 <h4 id="Finding-the-Distributions-of-Letters-and-Phonemes-Within-the-Data">Finding the Distributions of Letters and Phonemes Within the Data<a class="anchor-link" href="#Finding-the-Distributions-of-Letters-and-Phonemes-Within-the-Data">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Another aspect of the data that will be important for our statistical calculations later on is the occurrence of each orthographic and phonological character within the dataset overall. This was as simple as running through each row and keeping a count of appearances of that specific character. This value was then normalized on a scale from 0 to 1.</p>
+
 </div>
 </div>
 </div>
@@ -13366,21 +13417,23 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Data-Exploration">Data Exploration<a class="anchor-link" href="#Data-Exploration">&#182;</a></h3>
+<p><a id='3'></a></p>
+<h3 id="Data-Exploration-and-Analysis">Data Exploration and Analysis<a class="anchor-link" href="#Data-Exploration-and-Analysis">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Intra-Word-Co-Occurence-Map">Intra-Word Co-Occurence Map<a class="anchor-link" href="#Intra-Word-Co-Occurence-Map">&#182;</a></h4>
+<p><a id='3-1'></a></p>
+<h4 id="Intra-word-Co-occurence-Map">Intra-word Co-occurence Map<a class="anchor-link" href="#Intra-word-Co-occurence-Map">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We are going to start our exploration by finding how often each phoneme co-occurs within a word with a given letter.</p>
+<p>Before we fit a model to predict how words are pronounced, we found it a good idea to see if some statistics could prove relations between certain words and letters. At its simplest level, we are finding how likely it is that a letter and phoneme are found within the same word, transcription pair. We have a matrix with letters and phonemes where each value holds the weight of that pairs co-occurrence. The higher the value, the more likely we have found that pair to co-occur within a word or transcription. This value is weighted by both the length of the word and transcription as well as the distribution of those characters within the overall dataset. This prevents letters like ‘q’ and ‘z’ from having very small co-occurrence given they are much rarer in orthographic British English.</p>
 
 </div>
 </div>
@@ -13966,26 +14019,32 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>After the heatmap is created, we can find mappings between the letters and phonemes based on the co-occurrence values. For our purposes here, we are finding the phoneme with the largest co-occurrence value for each letter and the letter with the largest co-occurrence value for each phoneme. This mapping worked rather well from a phonological point of view, where for the most part the consonants in the english alphabet map closely to how we are most likely to pronounce that latter on its own. However, for some of the vowels, they were mapped to consonants, which suggests that our analysis needs to be more granular than intra-word co-occurrence.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='3-2'></a></p>
 <h4 id="Finding-Clusters-Within-Words">Finding Clusters Within Words<a class="anchor-link" href="#Finding-Clusters-Within-Words">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One way in which we can increase the granularity of our analysis is by digging deeper into the words themselves. We want to make sure that letters are mapped correctly to phonemes in the transcription. Before, we were including relationships between letters and phonemes that may have been in completely different parts of the word. Words are characterized by a specific character ordering, but we can also analyze clusters of these characters within the word. <br> <br>
+A cluster is a grouping of different characters within a specific category. A word like ‘enjoy’ would appear as a group of clusters like [‘e’, ‘nj’, ‘oy’] where each cluster within this listing is either a cluster of consonants or vowels. The transcription equivalent of this word would look like ‘ɪndʒɔɪ’ = [‘ɪ’, ‘ndʒ’, ‘ɔɪ’]. We can find the clustering of these words and transcriptions by running them through a function that first assigns each character a vowel or consonant attribute and then runs through that word and finds local groups of these vowels or consonants. We are attempting to map clusters from the word to the transcription. It is worth noting that a character having a consonant or vowel attribute is dependent on information we already know about both orthographic and phonological British English. This data has been added manually to the script. <br> <br>
+Another topic of interest is the fact that in the spelling of a word in British English, the character ‘y’ is considered a semivowel in that it can represent both the IPA ‘j’ consonant at the beginning of words like ‘yes’ or what is considered the nucleus vowel of a syllable. In this way, within the spelling of a word, ‘y’ can be considered both a vowel and a consonant, and we have added code that accounts for that.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Manual listing of consonants and vowels for orthrographical British English</span>
@@ -14008,7 +14067,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Returns the word as a list of strings representing its clusters</span>
@@ -14055,81 +14114,17 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Testing get_cluster() on various words</span>
-<span class="n">o_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;stood&#39;</span><span class="p">,</span> <span class="s1">&#39;breakfast&#39;</span><span class="p">,</span> <span class="s1">&#39;computer&#39;</span><span class="p">,</span> <span class="s1">&#39;listen&#39;</span><span class="p">,</span> <span class="s1">&#39;rubber&#39;</span><span class="p">,</span> <span class="s1">&#39;without&#39;</span><span class="p">,</span> <span class="s1">&#39;enjoy&#39;</span><span class="p">]</span>
-<span class="n">p_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;stʊd&#39;</span><span class="p">,</span> <span class="s1">&#39;brekfəst&#39;</span><span class="p">,</span> <span class="s1">&#39;kəmpjutə&#39;</span><span class="p">,</span> <span class="s1">&#39;lɪsən&#39;</span><span class="p">,</span> <span class="s1">&#39;rʌbə&#39;</span><span class="p">,</span> <span class="s1">&#39;wɪðaʊt&#39;</span><span class="p">,</span> <span class="s1">&#39;ɪndʒɔɪ&#39;</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">o_words</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">o_words</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">get_cluster</span><span class="p">(</span><span class="n">o_words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="kc">True</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">get_cluster</span><span class="p">(</span><span class="n">p_words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="kc">False</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-stood
-[([&#39;s&#39;, &#39;t&#39;], &#39;c&#39;), ([&#39;o&#39;, &#39;o&#39;], &#39;v&#39;), ([&#39;d&#39;], &#39;c&#39;)]
-[([&#39;s&#39;, &#39;t&#39;], &#39;c&#39;), ([&#39;ʊ&#39;], &#39;v&#39;), ([&#39;d&#39;], &#39;c&#39;)]
-
-breakfast
-[([&#39;b&#39;, &#39;r&#39;], &#39;c&#39;), ([&#39;e&#39;, &#39;a&#39;], &#39;v&#39;), ([&#39;k&#39;, &#39;f&#39;], &#39;c&#39;), ([&#39;a&#39;], &#39;v&#39;), ([&#39;s&#39;, &#39;t&#39;], &#39;c&#39;)]
-[([&#39;b&#39;, &#39;r&#39;], &#39;c&#39;), ([&#39;e&#39;], &#39;v&#39;), ([&#39;k&#39;, &#39;f&#39;], &#39;c&#39;), ([&#39;ə&#39;], &#39;v&#39;), ([&#39;s&#39;, &#39;t&#39;], &#39;c&#39;)]
-
-computer
-[([&#39;c&#39;], &#39;c&#39;), ([&#39;o&#39;], &#39;v&#39;), ([&#39;m&#39;, &#39;p&#39;], &#39;c&#39;), ([&#39;u&#39;], &#39;v&#39;), ([&#39;t&#39;], &#39;c&#39;), ([&#39;e&#39;], &#39;v&#39;), ([&#39;r&#39;], &#39;c&#39;)]
-[([&#39;k&#39;], &#39;c&#39;), ([&#39;ə&#39;], &#39;v&#39;), ([&#39;m&#39;, &#39;p&#39;, &#39;j&#39;], &#39;c&#39;), ([&#39;u&#39;], &#39;v&#39;), ([&#39;t&#39;], &#39;c&#39;), ([&#39;ə&#39;], &#39;v&#39;)]
-
-listen
-[([&#39;l&#39;], &#39;c&#39;), ([&#39;i&#39;], &#39;v&#39;), ([&#39;s&#39;, &#39;t&#39;], &#39;c&#39;), ([&#39;e&#39;], &#39;v&#39;), ([&#39;n&#39;], &#39;c&#39;)]
-[([&#39;l&#39;], &#39;c&#39;), ([&#39;ɪ&#39;], &#39;v&#39;), ([&#39;s&#39;], &#39;c&#39;), ([&#39;ə&#39;], &#39;v&#39;), ([&#39;n&#39;], &#39;c&#39;)]
-
-rubber
-[([&#39;r&#39;], &#39;c&#39;), ([&#39;u&#39;], &#39;v&#39;), ([&#39;b&#39;, &#39;b&#39;], &#39;c&#39;), ([&#39;e&#39;], &#39;v&#39;), ([&#39;r&#39;], &#39;c&#39;)]
-[([&#39;r&#39;], &#39;c&#39;), ([&#39;ʌ&#39;], &#39;v&#39;), ([&#39;b&#39;], &#39;c&#39;), ([&#39;ə&#39;], &#39;v&#39;)]
-
-without
-[([&#39;w&#39;], &#39;c&#39;), ([&#39;i&#39;], &#39;v&#39;), ([&#39;t&#39;, &#39;h&#39;], &#39;c&#39;), ([&#39;o&#39;, &#39;u&#39;], &#39;v&#39;), ([&#39;t&#39;], &#39;c&#39;)]
-[([&#39;w&#39;], &#39;c&#39;), ([&#39;ɪ&#39;], &#39;v&#39;), ([&#39;ð&#39;], &#39;c&#39;), ([&#39;a&#39;, &#39;ʊ&#39;], &#39;v&#39;), ([&#39;t&#39;], &#39;c&#39;)]
-
-enjoy
-[([&#39;e&#39;], &#39;v&#39;), ([&#39;n&#39;, &#39;j&#39;], &#39;c&#39;), ([&#39;o&#39;, &#39;y&#39;], &#39;v&#39;)]
-[([&#39;ɪ&#39;], &#39;v&#39;), ([&#39;n&#39;, &#39;d&#39;, &#39;ʒ&#39;], &#39;c&#39;), ([&#39;ɔ&#39;, &#39;ɪ&#39;], &#39;v&#39;)]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='3-3'></a></p>
 <h4 id="Preparing-Data-with-Clustering">Preparing Data with Clustering<a class="anchor-link" href="#Preparing-Data-with-Clustering">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clustered_transcriptions</span> <span class="o">=</span> <span class="n">transcriptions</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14146,7 +14141,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Function to check compatibility of clustered words and their corresponding transcription</span>
@@ -14171,7 +14166,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add a new column with the returned value of the cluster_compatible function</span>
@@ -14194,7 +14189,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14266,7 +14261,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pull out compatible tuples for heatmap analysis and incompatible tuples for later analysis</span>
@@ -14281,7 +14276,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flatten each column</span>
@@ -14309,7 +14304,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14381,7 +14376,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create new dataframes for vowel and consonant clusters for analysis</span>
@@ -14397,13 +14392,22 @@ enjoy
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Intra-Cluster-Co-Occurence-Map">Intra-Cluster Co-Occurence Map<a class="anchor-link" href="#Intra-Cluster-Co-Occurence-Map">&#182;</a></h4>
+<p><a id='3-4'></a></p>
+<h4 id="Intra-cluster-Co-occurence-Map">Intra-cluster Co-occurence Map<a class="anchor-link" href="#Intra-cluster-Co-occurence-Map">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The intra-cluster co-occurrence heatmap was calculated very similarly to the intra-word heatmap, except for the fact that there must be separate heatmaps for the vowels and consonants given this is a specific attribute that each cluster has.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vowel_orth_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">v</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">orth_vowels</span><span class="p">)}</span>
@@ -14430,7 +14434,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Run through each cluster and add acording weighted value</span>
@@ -14472,7 +14476,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Change index and columns names and normalize dataframes</span>
@@ -14496,7 +14500,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot the dataframe showing the co-occurence values of each phoneme, letter pair</span>
@@ -14537,7 +14541,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the letter of greatest co-occurence for each phoneme</span>
@@ -14555,7 +14559,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -14623,7 +14627,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the phoneme of greatest co-occurence for each letter</span>
@@ -14641,7 +14645,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -14695,7 +14699,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot the dataframe showing the co-occurence values of each phoneme, letter pair</span>
@@ -14736,7 +14740,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the letter of greatest co-occurence for each phoneme</span>
@@ -14754,7 +14758,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14840,7 +14844,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the phoneme of greatest co-occurence for each letter</span>
@@ -14858,7 +14862,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -14943,13 +14947,22 @@ enjoy
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="In-Compatible-Clustering-Analysis">In-Compatible Clustering Analysis<a class="anchor-link" href="#In-Compatible-Clustering-Analysis">&#182;</a></h4>
+<p>Our co-occurrence mapping code did a good job at ‘correctly’ mapping phonemes to letters. It is interesting to note that for IPA symbols like ‘ʃ’ (unvoiced postalveolar fricative) and ‘ð’ (voiced interdental fricative) are mapped to the letter ‘h’, which makes sense given these sounds are mostly written as ‘sh’ and ‘th’ respectively.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='3-5'></a></p>
+<h4 id="Incompatible-Clustering-Analysis">Incompatible Clustering Analysis<a class="anchor-link" href="#Incompatible-Clustering-Analysis">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">incompatible_clust</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14965,7 +14978,7 @@ enjoy
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -15037,7 +15050,7 @@ enjoy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Percent of incompatible clusterings with same starting cluster type (c/v):&quot;</span><span class="p">)</span>
@@ -15172,7 +15185,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">silent_last</span> <span class="o">=</span> <span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
@@ -15203,6 +15216,12 @@ Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   &#34;&#34;&#34;
+/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:6: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  
 </pre>
 </div>
 </div>
@@ -15213,7 +15232,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
@@ -15238,22 +15257,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 </div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &#34;&#34;&#34;Entry point for launching an IPython kernel.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -15261,13 +15264,14 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='4'></a></p>
 <h3 id="Decision-Tree-Model">Decision Tree Model<a class="anchor-link" href="#Decision-Tree-Model">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># split the data into learnable chunks</span>
@@ -15324,7 +15328,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#preprocess data</span>
@@ -15373,7 +15377,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeClassifier</span> <span class="k">as</span> <span class="n">DecisionTree</span>
@@ -15450,7 +15454,7 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">shuffle</span>
@@ -15520,7 +15524,7 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[153]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set up average and number of iteratons</span>
@@ -15553,7 +15557,7 @@ y prime:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Score: 80.35%
+<pre>Score: 79.7%
 </pre>
 </div>
 </div>
@@ -15564,7 +15568,7 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">plot_tree</span>
@@ -15586,7 +15590,7 @@ y prime:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[155]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -15616,7 +15620,7 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">itransform</span><span class="p">,</span> <span class="n">otransform</span><span class="p">):</span>
@@ -15638,6 +15642,77 @@ y prime:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-43-bf4211fd0ffc&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span> total <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">0</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span> <span class="ansi-green-fg">for</span> i<span class="ansi-blue-fg">,</span> row <span class="ansi-green-fg">in</span> compatible_clust<span class="ansi-blue-fg">.</span>iterrows<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>p <span class="ansi-blue-fg">=</span> predict<span class="ansi-blue-fg">(</span>row<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;word&#34;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> dtree<span class="ansi-blue-fg">,</span> letter_encoder<span class="ansi-blue-fg">,</span> phono_encoder<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span>     <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">(</span>p <span class="ansi-blue-fg">==</span> get_raw_chunks<span class="ansi-blue-fg">(</span>row<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;transcription&#34;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>all<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span>         correct <span class="ansi-blue-fg">+=</span> <span class="ansi-cyan-fg">1</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-43-bf4211fd0ffc&gt;</span> in <span class="ansi-cyan-fg">predict</span><span class="ansi-blue-fg">(word, tree, itransform, otransform)</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">def</span> predict<span class="ansi-blue-fg">(</span>word<span class="ansi-blue-fg">,</span> tree<span class="ansi-blue-fg">,</span> itransform<span class="ansi-blue-fg">,</span> otransform<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     word <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>array<span class="ansi-blue-fg">(</span>split<span class="ansi-blue-fg">(</span>word<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg">     </span>word_p <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>letter_encoder<span class="ansi-blue-fg">.</span>transform<span class="ansi-blue-fg">(</span>word<span class="ansi-blue-fg">.</span>flatten<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> 
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     <span class="ansi-green-fg">return</span> otransform<span class="ansi-blue-fg">.</span>inverse_transform<span class="ansi-blue-fg">(</span>tree<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">(</span>word_p<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">transform</span><span class="ansi-blue-fg">(self, X)</span>
+<span class="ansi-green-intense-fg ansi-bold">    730</span>                                        copy=True)
+<span class="ansi-green-intense-fg ansi-bold">    731</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 732</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_transform_new<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    733</span> 
+<span class="ansi-green-intense-fg ansi-bold">    734</span>     <span class="ansi-green-fg">def</span> inverse_transform<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> X<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">_transform_new</span><span class="ansi-blue-fg">(self, X)</span>
+<span class="ansi-green-intense-fg ansi-bold">    678</span>         <span class="ansi-blue-fg">&#34;&#34;&#34;New implementation assuming categorical input&#34;&#34;&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">    679</span>         <span class="ansi-red-fg"># validation of X happens in _check_X called by _transform</span>
+<span class="ansi-green-fg">--&gt; 680</span><span class="ansi-red-fg">         </span>X_int<span class="ansi-blue-fg">,</span> X_mask <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_transform<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> handle_unknown<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>handle_unknown<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    681</span> 
+<span class="ansi-green-intense-fg ansi-bold">    682</span>         n_samples<span class="ansi-blue-fg">,</span> n_features <span class="ansi-blue-fg">=</span> X_int<span class="ansi-blue-fg">.</span>shape
+
+<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">_transform</span><span class="ansi-blue-fg">(self, X, handle_unknown)</span>
+<span class="ansi-green-intense-fg ansi-bold">    106</span> 
+<span class="ansi-green-intense-fg ansi-bold">    107</span>     <span class="ansi-green-fg">def</span> _transform<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> X<span class="ansi-blue-fg">,</span> handle_unknown<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;error&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 108</span><span class="ansi-red-fg">         </span>X_list<span class="ansi-blue-fg">,</span> n_samples<span class="ansi-blue-fg">,</span> n_features <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_check_X<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    109</span> 
+<span class="ansi-green-intense-fg ansi-bold">    110</span>         X_int <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>n_samples<span class="ansi-blue-fg">,</span> n_features<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span>np<span class="ansi-blue-fg">.</span>int<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">_check_X</span><span class="ansi-blue-fg">(self, X)</span>
+<span class="ansi-green-intense-fg ansi-bold">     47</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> <span class="ansi-blue-fg">(</span>hasattr<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;iloc&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">and</span> getattr<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;ndim&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     48</span>             <span class="ansi-red-fg"># if not a dataframe, do normal check_array validation</span>
+<span class="ansi-green-fg">---&gt; 49</span><span class="ansi-red-fg">             </span>X_temp <span class="ansi-blue-fg">=</span> check_array<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     50</span>             if (not hasattr(X, &#39;dtype&#39;)
+<span class="ansi-green-intense-fg ansi-bold">     51</span>                     and np.issubdtype(X_temp.dtype, np.str_)):
+
+<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/utils/validation.py</span> in <span class="ansi-cyan-fg">check_array</span><span class="ansi-blue-fg">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, warn_on_dtype, estimator)</span>
+<span class="ansi-green-intense-fg ansi-bold">    519</span>                     <span class="ansi-blue-fg">&#34;Reshape your data either using array.reshape(-1, 1) if &#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">    520</span>                     <span class="ansi-blue-fg">&#34;your data has a single feature or array.reshape(1, -1) &#34;</span>
+<span class="ansi-green-fg">--&gt; 521</span><span class="ansi-red-fg">                     &#34;if it contains a single sample.&#34;.format(array))
+</span><span class="ansi-green-intense-fg ansi-bold">    522</span> 
+<span class="ansi-green-intense-fg ansi-bold">    523</span>         <span class="ansi-red-fg"># in the future np.flexible dtypes will be handled like object dtypes</span>
+
+<span class="ansi-red-fg">ValueError</span>: Expected 2D array, got 1D array instead:
+array=[&#39;&#39; &#39;a&#39; &#39;&#39;].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.</pre>
+</div>
+</div>
+
 </div>
 </div>
 
