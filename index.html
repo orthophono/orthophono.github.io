@@ -13116,19 +13116,27 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Sound-it-Out">Sound it Out<a class="anchor-link" href="#Sound-it-Out">&#182;</a></h1>
+<center>
+<h1>Sound it Out</h1>
+</center>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><i>
+<center><i>
 Diana Chou, Max Scribner, Lewis Qualkenbush<br>   
 CMSC320 Final Tutorial<br>
-Fall 2019 Semester
-</i></p>
-
+Fall 2019, John Dickerson
+</i></center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><img src='th_sound_comic.png'></center>
 </div>
 </div>
 </div>
@@ -13142,20 +13150,22 @@ Fall 2019 Semester
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3>Table of Contents</h3><p><a href="#0">Introduction</a></p>
-<p><a href="#1">Goal</a></p>
-<p><a href="#2">Data Wrangling</a><br>
-    <a href="#2-1">Cleaning the Data</a><br>
-    <a href="#2-2">Finding Unique Characters for Analysis</a><br>
-    <a href="#2-3">Finding the Distributions of Letters and Phonemes Within the Data</a><br></p>
-<p><a href="#3">Data Exploration and Analysis</a><br>
-    <a href="#3-1">Intra-word Co-occurence Map</a><br>
-    <a href="#3-2">Finding Clusters Within Words</a><br>
-    <a href="#3-3">Preparing Data with Clustering</a><br>
-    <a href="#3-4">Intra-cluster Co-occurence Map</a><br>
-    <a href="#3-5">Incompatible Clustering Analysis</a><br></p>
-<p><a href="#4">Decision Tree Model</a></p>
-<p><a href="#5">Conclusion</a></p>
+<p><h3>Table of Contents</h3><h4><ol><li></p>
+<p><a href="#0">Introduction</a>&lt;/li&gt;<br><li></p>
+<p><a href="#1">Goal</a>&lt;/li&gt;<br><li></p>
+<p><a href="#2">Data Wrangling</a><ul><li></p>
+<p><a href="#2-1">Cleaning the Data</a>&lt;/li&gt;<li></p>
+<p><a href="#2-2">Finding Unique Characters for Analysis</a>&lt;/li&gt;<li></p>
+<p><a href="#2-3">Finding the Distributions of Letters and Phonemes Within the Data</a>&lt;/li&gt;&lt;/ul&gt;<li></p>
+<p><a href="#3">Data Exploration and Analysis</a><ul><li></p>
+<p><a href="#3-1">Intra-word Co-occurence Map</a>&lt;/li&gt;<li></p>
+<p><a href="#3-2">Finding Clusters Within Words</a>&lt;/li&gt;<li></p>
+<p><a href="#3-3">Preparing Data with Clustering</a>&lt;/li&gt;<li></p>
+<p><a href="#3-4">Intra-cluster Co-occurence Map</a>&lt;/li&gt;<li></p>
+<p><a href="#3-5">Incompatible Clustering Analysis</a>&lt;/li&gt;&lt;/ul&gt;<li></p>
+<p><a href="#4">Decision Tree Model</a>&lt;/li&gt;<br><li></p>
+<p><a href="#5">Ideas for Further Improvement</a>&lt;/li&gt;<br><li></p>
+<p><a href="#6">Conclusion</a>&lt;/li&gt;&lt;/ol&gt;&lt;/h4&gt;</p>
 
 </div>
 </div>
@@ -13171,7 +13181,14 @@ Fall 2019 Semester
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Text</p>
+<p>A primary goal highlighted in early education is the development of basic speaking and reading skills. Despite this, in 2013, only about one-third of a nationwide sample of fourth graders read at or above the proficient level (<a href="https://www.nationsreportcard.gov/reading_math_2013/#/state-performance">National Center for Education Statistics</a>, 2013). Reading words and being able to pronounce them is a complex process involving the coordination of multiple skills and linguistic systems in order to result in fluent behaviors. It is important for researchers to investigate the skills and systems involved in reading and speaking in order to be able to design educational programs and learning environments that foster growth in these skills and systems. Reading and speaking involves the coordination of multiple systems including orthography and phonology.</p>
+<h4 id="Orthography">Orthography<a class="anchor-link" href="#Orthography">&#182;</a></h4><p>Orthography is a set of rules for writing in a language. The word “orthography” is based on the Greek words that mean “right writing”. Every written language (used for education, publishing literature, legal documents, etc.) has some kind of an orthography, which develops over the years as people use it for communication, and literature. The rules are usually written by linguists who know the language well and enjoy the respect of the people who speak the language, and they try to balance general accepted usage and a rigid standard. Formalizing an orthography is a part of larger activity called language planning.</p>
+<p>Orthographic processing involves the visual structure of a word (or string of letters). A majority of the time, you depend on the orthographic representation to quickly know that “cat” is a real word while “cta” is not. Research suggests that the ability to automatically orthographically process strings of letters as words depends on the <a href="https://en.wikipedia.org/wiki/Visual_word_form_area">visual word form area</a> (VWFA) system, which may develop over time with experience with words.</p>
+<h4 id="Phonology">Phonology<a class="anchor-link" href="#Phonology">&#182;</a></h4><p>Phonology is an area of linguistics that explores the sounds of a language. Each language uses a different set of sounds, rules for which sounds follow after one another, what is perceived as syllables, what is the stress of the word, and so on. It is usually researched as part of scientific linguistics and grammar.</p>
+<p>Phonological processing involves the sounds of a language, called phonemes. A majority of the time, you depend on phonological processing to know that “cat” says kuh – ah – tuh. Tasks that delve into phonological processing, such as rhyming games or phoneme manipulation (say “cat” without the kuh), have proven to be some of the strongest correlates and predictors of pronouncing a word.</p>
+<h5 id="In-order-to-learn-how-to-read-a-word-and-pronounce-it-correctly,-the-phonemes-that-one-knows-from-spoken-language-(phonology)-must-be-mapped-on-to-the-printed-letters-on-the-page-(orthography).">In order to learn how to read a word and pronounce it correctly, the phonemes that one knows from spoken language (phonology) must be mapped on to the printed letters on the page (orthography).<a class="anchor-link" href="#In-order-to-learn-how-to-read-a-word-and-pronounce-it-correctly,-the-phonemes-that-one-knows-from-spoken-language-(phonology)-must-be-mapped-on-to-the-printed-letters-on-the-page-(orthography).">&#182;</a></h5><p><br><center><img src="phonemic_chart.jpg" width="70%"></center></p>
+<h4 id="Phonology-!=-Phonetics">Phonology != Phonetics<a class="anchor-link" href="#Phonology-!=-Phonetics">&#182;</a></h4><p>There are two ways in which we can transcribe speech. Phonemic transcription, also sometimes known as ‘broad’ transcription, involves representing speech using just a unique symbol for each phoneme of the language. The other way we can transcribe speech is using phonetic transcription, also sometimes known as ‘narrow’ transcription, involves representing additional details about the contextual variations in pronunciation that occur in normal speech. 
+Phonemic and phonetic transcription both have their purposes. The goal of a phonemic transcription is to record the phonemes as ‘mental categories’ that a speaker uses, rather than the actual spoken variants of those phonemes that are produced in the context of a particular word. Phonetic transcription on the other hand specifies the finer details of how sounds are actually made, and is based on the surrounding context and phonological rules in specific dialects and languages. Thus, the phonemic representation of a word is a more accurate representation on how to say a word and predict its pronunciation based on how it is spelled.</p>
 
 </div>
 </div>
@@ -13180,14 +13197,7 @@ Fall 2019 Semester
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='1'></a></p>
-<h3 id="Goal">Goal<a class="anchor-link" href="#Goal">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Text</p>
+<h3>Our Goal? <br><br> Create a model that takes in the spelling of a word and output a prediction at its pronunciation!</h3>
 
 </div>
 </div>
@@ -13196,7 +13206,16 @@ Fall 2019 Semester
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='2'></a></p>
-<h3 id="Data-Wrangling">Data Wrangling<a class="anchor-link" href="#Data-Wrangling">&#182;</a></h3>
+<h3 id="Data-Wrangling">Data Wrangling<a class="anchor-link" href="#Data-Wrangling">&#182;</a></h3><h4 id="Downlaoding-data">Downlaoding data<a class="anchor-link" href="#Downlaoding-data">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We found the data on a website containing the “top 1000 words” in the English language, and their transcriptions. Code was written which scraped the list of “top 1000 words” and went to their associated web page, finding the transcription in the HTML using BeautifulSoup, python’s requests library, and its regex library.</p>
+<p>You can see that code <a href="get_british.html">here</a></p>
+
 </div>
 </div>
 </div>
@@ -13332,8 +13351,8 @@ Fall 2019 Semester
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;b&#39;, &#39;x&#39;, &#39;u&#39;, &#39;e&#39;, &#39;m&#39;, &#39;d&#39;, &#39;c&#39;, &#39;h&#39;, &#39;p&#39;, &#39;i&#39;, &#39;r&#39;, &#39;l&#39;, &#39;w&#39;, &#39;k&#39;, &#39;s&#39;, &#39;j&#39;, &#39;t&#39;, &#39;f&#39;, &#39;v&#39;, &#39;q&#39;, &#39;n&#39;, &#39;y&#39;, &#39;z&#39;, &#39;o&#39;, &#39;a&#39;, &#39;g&#39;}
-{&#39;b&#39;, &#39;m&#39;, &#39;u&#39;, &#39;h&#39;, &#39;p&#39;, &#39;i&#39;, &#39;θ&#39;, &#39;w&#39;, &#39;k&#39;, &#39;s&#39;, &#39;ə&#39;, &#39;ɒ&#39;, &#39;ð&#39;, &#39;j&#39;, &#39;f&#39;, &#39;æ&#39;, &#39;v&#39;, &#39;ʃ&#39;, &#39;n&#39;, &#39;ɜ&#39;, &#39;ɔ&#39;, &#39;ŋ&#39;, &#39;z&#39;, &#39;ʌ&#39;, &#39;e&#39;, &#39;ɑ&#39;, &#39;d&#39;, &#39;r&#39;, &#39;l&#39;, &#39;ɪ&#39;, &#39;ʒ&#39;, &#39;t&#39;, &#39;ʊ&#39;, &#39;a&#39;, &#39;g&#39;}
+<pre>{&#39;t&#39;, &#39;b&#39;, &#39;r&#39;, &#39;k&#39;, &#39;y&#39;, &#39;j&#39;, &#39;s&#39;, &#39;f&#39;, &#39;g&#39;, &#39;e&#39;, &#39;a&#39;, &#39;v&#39;, &#39;z&#39;, &#39;m&#39;, &#39;p&#39;, &#39;w&#39;, &#39;h&#39;, &#39;n&#39;, &#39;x&#39;, &#39;u&#39;, &#39;o&#39;, &#39;d&#39;, &#39;c&#39;, &#39;l&#39;, &#39;q&#39;, &#39;i&#39;}
+{&#39;b&#39;, &#39;ɔ&#39;, &#39;r&#39;, &#39;k&#39;, &#39;ə&#39;, &#39;æ&#39;, &#39;g&#39;, &#39;ð&#39;, &#39;v&#39;, &#39;ʒ&#39;, &#39;m&#39;, &#39;ɪ&#39;, &#39;n&#39;, &#39;d&#39;, &#39;u&#39;, &#39;l&#39;, &#39;ŋ&#39;, &#39;i&#39;, &#39;t&#39;, &#39;θ&#39;, &#39;ʃ&#39;, &#39;ɒ&#39;, &#39;ʌ&#39;, &#39;j&#39;, &#39;s&#39;, &#39;f&#39;, &#39;e&#39;, &#39;ɜ&#39;, &#39;a&#39;, &#39;z&#39;, &#39;p&#39;, &#39;w&#39;, &#39;h&#39;, &#39;ʊ&#39;, &#39;ɑ&#39;}
 </pre>
 </div>
 </div>
@@ -14955,14 +14974,91 @@ Another topic of interest is the fact that in the spelling of a word in British 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='3-5'></a></p>
-<h4 id="Incompatible-Clustering-Analysis">Incompatible Clustering Analysis<a class="anchor-link" href="#Incompatible-Clustering-Analysis">&#182;</a></h4>
+<h4 id="Cluster-manipulation-functions">Cluster manipulation functions<a class="anchor-link" href="#Cluster-manipulation-functions">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># split the data into learnable chunks</span>
+<span class="k">def</span> <span class="nf">split</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
+        <span class="n">current_chunk</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">2</span><span class="p">:]))</span>
+            
+        <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        
+        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][:</span><span class="mi">2</span><span class="p">]))</span>
+        
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_chunk</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">out</span>
+
+<span class="c1"># get an array of unannotated string chunks</span>
+<span class="k">def</span> <span class="nf">get_raw_chunks</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">word</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Letter chunks in context&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">split</span><span class="p">(</span><span class="n">compatible_clust</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">][</span><span class="s2">&quot;word&quot;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Raw transcription chunks&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_raw_chunks</span><span class="p">(</span><span class="n">compatible_clust</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">][</span><span class="s2">&quot;transcription&quot;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Letter chunks in context
+[[&#39;&#39;, &#39;br&#39;, &#39;a&#39;], [&#39;br&#39;, &#39;a&#39;, &#39;nc&#39;], [&#39;a&#39;, &#39;nch&#39;, &#39;&#39;]]
+
+Raw transcription chunks
+[&#39;br&#39;, &#39;ɑ&#39;, &#39;ntʃ&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='3-5'></a></p>
+<h4 id="Incompatible-Clustering-Analysis">Incompatible Clustering Analysis<a class="anchor-link" href="#Incompatible-Clustering-Analysis">&#182;</a></h4><p>Incompatible clustersare those whose cluster-count and polarity (cvcv... vs vcvc…) do not match between spelling and pronunciation. We found approximately 35% of our words incompatible. This can happen for many reasons. The most common is that there is a silent letter at the end, leading to the same polarity but a pronunciation which is one cluster fewer than the spelling. In British english this is most common with words ending in "e" or "r", as both are often unvoiced. These take up 75% of the words initially labeled incompatible.</p>
+<ol>
+<li>“weather” (cvcvc)  → /weðə/ (cvcv)</li>
+<li>“case” (cvcv)   → /keɪs/ (cvc)</li>
+</ol>
+<p>Though this would also be the case if the first cluster was silent, the entire first cluster is never silent. One way we thought of combatting this problem was to pad the pronounciation cluster list with a null (unpronounced) character at the end. This way, we could salvage approximately 26% of our dataset for training.</p>
+<p>One issue with the British dialect of English is that “r” is only pronounced in a specific few cases (ex. “train”, “frame”, “boring”, but not “mark”, “cluster”, and “bored”). For this reason, words which have an “r” in the middle often have a chance of creating a cluster mismatch, giving the pronunciation and the spelling a discrepancy of two clusters. Words like “bored” would not be salvaged by our silent-last-letter algorithm. We are still investigating ways to infer the structure of a semivowel, and this is a place of further research in the future.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">incompatible_clust</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14978,7 +15074,7 @@ Another topic of interest is the fact that in the spelling of a word in British 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -15050,182 +15146,18 @@ Another topic of interest is the fact that in the spelling of a word in British 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Percent of incompatible clusterings with same starting cluster type (c/v):&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]))])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">))</span>
-
-<span class="n">incompatible_clust</span><span class="p">[</span><span class="s2">&quot;word_clusters&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="n">incompatible_clust</span><span class="p">[</span><span class="s2">&quot;transcription_clusters&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Percent of incompatible clusterings with one more spelling cluster than pronounciation:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Percent of incompatible clusterings with one fewer spelling cluster than pronounciation:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">])])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">])]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers (more than one cluster different in size)&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-                                
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Percent of incompatible clusterings with same starting cluster type (c/v):
-0.9792899408284024
-Percent of incompatible clusterings with one more spelling cluster than pronounciation:
-0.7958579881656804
-                                                 word  \
-2   [([a], v), ([b], c), ([o], v), ([v], c), ([e],...   
-5   [([a], v), ([c, t], c), ([i], v), ([v], c), ([...   
-9         [([a], v), ([f, t], c), ([e], v), ([r], c)]   
-11                     [([a], v), ([g], c), ([e], v)]   
-14                            [([a, i], v), ([r], c)]   
-
-                                  transcription  compatible  word_clusters  \
-2      [([ə], v), ([b], c), ([ʌ], v), ([v], c)]       False              5   
-5   [([æ], v), ([k, t], c), ([ɪ], v), ([v], c)]       False              5   
-9             [([ɑ], v), ([f, t], c), ([ə], v)]       False              4   
-11                   [([e, ɪ], v), ([d, ʒ], c)]       False              3   
-14                                [([e, ə], v)]       False              2   
-
-    transcription_clusters  
-2                        4  
-5                        4  
-9                        3  
-11                       2  
-14                       1  
-Percent of incompatible clusterings with one fewer spelling cluster than pronounciation:
-0.07692307692307693
-                                                  word  \
-28   [([a], v), ([n], c), ([y, o], v), ([n], c), ([...   
-31                [([a], v), ([p, p, l], c), ([e], v)]   
-92      [([b], c), ([o], v), ([t, t, l], c), ([e], v)]   
-120     [([c], c), ([a], v), ([n, d, l], c), ([e], v)]   
-145     [([c], c), ([i], v), ([r, c, l], c), ([e], v)]   
-
-                                         transcription  compatible  \
-28   [([e], v), ([n], c), ([ɪ], v), ([w], c), ([ʌ],...       False   
-31            [([æ], v), ([p], c), ([ə], v), ([l], c)]       False   
-92   [([b], c), ([ɒ], v), ([t], c), ([ə], v), ([l],...       False   
-120  [([k], c), ([æ], v), ([n, d], c), ([ə], v), ([...       False   
-145  [([s], c), ([ɜ], v), ([k], c), ([ə], v), ([l],...       False   
-
-     word_clusters  transcription_clusters  
-28               5                       6  
-31               3                       4  
-92               4                       5  
-120              4                       5  
-145              4                       5  
-Outliers (more than one cluster different in size)
-                                                  word  \
-32                      [([a], v), ([r], c), ([e], v)]   
-62   [([b], c), ([e], v), ([f], c), ([o], v), ([r],...   
-67   [([b], c), ([e], v), ([s], c), ([i], v), ([d],...   
-111  [([b], c), ([u], v), ([s], c), ([i], v), ([n],...   
-124           [([c], c), ([a], v), ([r], c), ([e], v)]   
-
-                                         transcription  compatible  \
-32                                          [([ɑ], v)]       False   
-62            [([b], c), ([ɪ], v), ([f], c), ([ɔ], v)]       False   
-67   [([b], c), ([ɪ], v), ([s], c), ([a, ɪ], v), ([...       False   
-111  [([b], c), ([ɪ], v), ([z, n], c), ([ə], v), ([...       False   
-124                            [([k], c), ([e, ə], v)]       False   
-
-     word_clusters  transcription_clusters  
-32               3                       1  
-62               6                       4  
-67               7                       5  
-111              7                       5  
-124              4                       2  
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  after removing the cwd from sys.path.
-/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:5: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &#34;&#34;&#34;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">silent_last</span> <span class="o">=</span> <span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="n">notlast</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="n">silent_last</span><span class="p">][</span><span class="s2">&quot;word&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">[([</span><span class="s2">&quot;&quot;</span><span class="p">],</span> <span class="s2">&quot;c&quot;</span><span class="p">)]</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;v&quot;</span> <span class="k">else</span> <span class="p">[([</span><span class="s2">&quot;&quot;</span><span class="p">],</span> <span class="s2">&quot;v&quot;</span><span class="p">)])</span>
-
-<span class="n">incompatible_clust</span><span class="p">[</span><span class="n">silent_last</span><span class="p">][</span><span class="s2">&quot;word&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">notlast</span>
-<span class="n">incompatible_clust</span><span class="p">[</span><span class="n">silent_last</span><span class="p">][</span><span class="s2">&quot;compatible&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># prints a subset of a word-transcription dataframe</span>
+<span class="k">def</span> <span class="nf">print_n</span><span class="p">(</span><span class="n">wordframe</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">wordframe</span><span class="p">[</span><span class="s2">&quot;word&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">get_raw_chunks</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">wordframe</span><span class="p">[</span><span class="s2">&quot;transcription&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">get_raw_chunks</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="o">//</span><span class="n">n</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">+</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;: &quot;</span><span class="o">+</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:5: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &#34;&#34;&#34;
-/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:6: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -15235,7 +15167,50 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># store number of clusters for each word/transcription</span>
+<span class="n">incompatible_clust</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">&quot;word_clusters&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">incompatible_clust</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">&quot;transcription_clusters&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="c1"># get the percent of all words which are cluster incompatible</span>
+<span class="n">percent_incompatible</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">clustered_transcriptions</span><span class="p">)</span>
+
+<span class="c1"># store the polarities of each incompatible word</span>
+<span class="n">word_polarities</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">trans_polarities</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="s1">&#39;transcription&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="c1"># get the percent of incompatible words which have the same polarity</span>
+<span class="n">same_start_percent</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">[</span><span class="n">word_polarities</span> <span class="o">==</span> <span class="n">trans_polarities</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">)</span>
+
+<span class="c1"># split into the set of same polarity and opposite polarity words</span>
+<span class="n">opp_start</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="n">word_polarities</span> <span class="o">!=</span> <span class="n">trans_polarities</span><span class="p">]</span>
+<span class="n">same_start</span> <span class="o">=</span> <span class="n">incompatible_clust</span><span class="p">[</span><span class="n">word_polarities</span> <span class="o">==</span> <span class="n">trans_polarities</span><span class="p">]</span>
+
+<span class="c1"># print some opposite polarity words</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Words which do not share polarity&quot;</span><span class="p">)</span>
+<span class="n">print_n</span><span class="p">(</span><span class="n">opp_start</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Find all words with one fewer phono cluster than cluster (silent last letter)</span>
+<span class="n">trans_one_shorter</span> <span class="o">=</span> <span class="n">same_start</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">same_start</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>
+<span class="n">percent_trans_one_shorter</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">same_start</span><span class="p">[</span><span class="n">trans_one_shorter</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Words which have a silent last letter&quot;</span><span class="p">)</span>
+<span class="n">print_n</span><span class="p">(</span><span class="n">same_start</span><span class="p">[</span><span class="n">trans_one_shorter</span><span class="p">],</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">trans_two_shorter</span> <span class="o">=</span> <span class="n">same_start</span><span class="p">[</span><span class="s1">&#39;word_clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">same_start</span><span class="p">[</span><span class="s1">&#39;transcription_clusters&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">2</span>
+<span class="n">percent_trans_two_shorter</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">same_start</span><span class="p">[</span><span class="n">trans_two_shorter</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">incompatible_clust</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Words which have a silent middle cluster&quot;</span><span class="p">)</span>
+<span class="n">print_n</span><span class="p">(</span><span class="n">same_start</span><span class="p">[</span><span class="n">trans_two_shorter</span><span class="p">],</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">([</span><span class="mi">1</span><span class="o">-</span><span class="n">percent_incompatible</span><span class="p">,</span> 
+         <span class="n">percent_incompatible</span><span class="o">*</span><span class="n">percent_trans_one_shorter</span><span class="p">,</span>
+         <span class="n">percent_incompatible</span><span class="o">*</span><span class="n">percent_trans_two_shorter</span><span class="p">,</span>
+         <span class="n">percent_incompatible</span><span class="o">*</span><span class="p">(</span><span class="n">same_start_percent</span> <span class="o">-</span> <span class="n">percent_trans_one_shorter</span> <span class="o">-</span> <span class="n">percent_trans_two_shorter</span><span class="p">),</span> 
+         <span class="n">percent_incompatible</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">same_start_percent</span><span class="p">)],</span> 
+        <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Compatible&quot;</span><span class="p">,</span> <span class="s2">&quot;Silent Last Cluster&quot;</span><span class="p">,</span> <span class="s2">&quot;Silent Middle Cluster&quot;</span><span class="p">,</span> <span class="s2">&quot;Misc Incompatible&quot;</span><span class="p">,</span> <span class="s2">&quot;Different cluster polarity&quot;</span><span class="p">],</span>
+        <span class="n">colors</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+      
 </pre></div>
 
     </div>
@@ -15251,10 +15226,72 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;d&#39;, &#39;e&#39;, &#39;g&#39;, &#39;h&#39;, &#39;l&#39;, &#39;n&#39;, &#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;w&#39;, &#39;y&#39;]
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/conda/lib/python3.7/site-packages/pandas/core/indexing.py:362: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[key] = _infer_fill_value(value)
+/opt/conda/lib/python3.7/site-packages/pandas/core/indexing.py:480: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[item] = s
 </pre>
 </div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Words which do not share polarity
+	hour: aʊə
+	one: wʌn
+	unit: junɪt
+	use: juz
+	useful: jusfəl
+	usual: juʒəl
+	usually: juʒəlɪ
+
+Words which have a silent last letter
+	above: əbʌv
+	corner: kɔnə
+	give: gɪv
+	mistake: mɪsteɪk
+	poor: pɔ
+	slow: sləʊ
+	wonder: wʌndə
+
+Words which have a silent middle cluster
+	are: ɑ
+	careful: keəfʊl
+	everybody: evrɪbɒdɪ
+	here: hɪə
+	more: mɔ
+	share: ʃeə
+	sure: ʃɔ
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
 </div>
 
 </div>
@@ -15265,70 +15302,17 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='4'></a></p>
-<h3 id="Decision-Tree-Model">Decision Tree Model<a class="anchor-link" href="#Decision-Tree-Model">&#182;</a></h3>
+<h3 id="Decision-Tree-Model">Decision Tree Model<a class="anchor-link" href="#Decision-Tree-Model">&#182;</a></h3><p>After having separated the words into localized data, we were able to analyze it. We know that individual letters can change pronunciation based on the letters around them (ex. The “a” in “ban” vs. “bad”), and are less affected by the clusters far away ("basket" vs. "basker"), and the clustering allowed us to localize the effects of clusters. Our goal is to predict the pronunciation of an entire cluster based on its contents one the contents around it. For this we trained a Decision Tree classifier on the nearest two letters of the clusters surrounding the target cluster, and on the target cluster itself. The decision for two letters was motivated by the fact that letter combinations of two can produce wildly different sounds than their last letter taken alone ( “h” vs. “th,” “ch,” “ah”).</p>
+<p>We chose a decision tree model because it seems consistent with the method by which children learn to pronounce words. They are often given a set of rules and told to apply them to a spelling to find its pronounciation. To do so, we one-hot encoded each cluster and the surrounding two clusters, and fed that into our decision tree predictor. We do believe that there are more layers of steps and filters which decrease the likelihood of some phoneme structures, but this as a beginning is shockingly effective.</p>
+<p>One issue with this is that it treats each cluster as a completely separate entity from the letters which comprise it. This has its benefits, especially in vowel clusters ('oo' != 'o'), but means that much more data needs to be taken in to understand and recognize every cluster. This also means that there is a high chance a cluster will appear which has not been seen before, and the Decision Tree model has no way of dealing with this. Though we do believe that a rule based system is present in the transformation from spelling to pronunciation, we believe that it is part of a yet to be understood larger process. However, on the dataset we had, our decision tree was very effective, and provides a promising starting point for future research.</p>
+<p>Our decision tree has an average of 80% accuracy when tested with 10 fold validation 100 times. This we think is a success, considering how we know that some amount of pronunciation is based on memorization. In the future, we think this data model can be expanded to more robustly and narrowly predict pronunciations of many languages based on cross-linguistic information (like phonemic features).</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># split the data into learnable chunks</span>
-<span class="k">def</span> <span class="nf">split</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
-        <span class="n">current_chunk</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">2</span><span class="p">:]))</span>
-            
-        <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
-        
-        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">current_chunk</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][:</span><span class="mi">2</span><span class="p">]))</span>
-        
-        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_chunk</span><span class="p">)</span>
-        
-    <span class="k">return</span> <span class="n">out</span>
-
-<span class="k">def</span> <span class="nf">get_raw_chunks</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">word</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">split</span><span class="p">(</span><span class="n">compatible_clust</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">][</span><span class="s2">&quot;word&quot;</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_raw_chunks</span><span class="p">(</span><span class="n">compatible_clust</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">][</span><span class="s2">&quot;transcription&quot;</span><span class="p">]))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[[&#39;&#39;, &#39;br&#39;, &#39;a&#39;], [&#39;br&#39;, &#39;a&#39;, &#39;nc&#39;], [&#39;a&#39;, &#39;nch&#39;, &#39;&#39;]]
-[&#39;br&#39;, &#39;ɑ&#39;, &#39;ntʃ&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#preprocess data</span>
@@ -15341,7 +15325,9 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input (X):&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Corresponding Output (y):&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
@@ -15359,13 +15345,16 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[&#39;&#39; &#39;a&#39; &#39;&#39;]
+<pre>Input (X):
+[[&#39;&#39; &#39;a&#39; &#39;&#39;]
  [&#39;&#39; &#39;a&#39; &#39;b&#39;]
  [&#39;a&#39; &#39;b&#39; &#39;ou&#39;]
  ...
  [&#39;r&#39; &#39;o&#39; &#39;&#39;]
  [&#39;&#39; &#39;z&#39; &#39;oo&#39;]
  [&#39;z&#39; &#39;oo&#39; &#39;&#39;]]
+
+Corresponding Output (y):
 [&#39;eɪ&#39; &#39;ə&#39; &#39;b&#39; ... &#39;əʊ&#39; &#39;z&#39; &#39;u&#39;]
 </pre>
 </div>
@@ -15377,7 +15366,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeClassifier</span> <span class="k">as</span> <span class="n">DecisionTree</span>
@@ -15392,14 +15381,15 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <span class="n">phono_encoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">y</span><span class="p">,(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
 <span class="n">y_p</span> <span class="o">=</span> <span class="n">phono_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">y</span><span class="p">,(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ONE HOT ENCODING:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X prime:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X encoded:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">X_p</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y prime:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y encoded:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y_p</span><span class="p">)</span>
 </pre></div>
 
@@ -15417,7 +15407,9 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>X:
+<pre>ONE HOT ENCODING:
+--------------------------------------------------
+X:
 [[&#39;&#39; &#39;a&#39; &#39;&#39;]
  [&#39;&#39; &#39;a&#39; &#39;b&#39;]
  [&#39;a&#39; &#39;b&#39; &#39;ou&#39;]
@@ -15425,7 +15417,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
  [&#39;r&#39; &#39;o&#39; &#39;&#39;]
  [&#39;&#39; &#39;z&#39; &#39;oo&#39;]
  [&#39;z&#39; &#39;oo&#39; &#39;&#39;]]
-X prime:
+X encoded:
 [[1. 0. 0. ... 0. 0. 0.]
  [1. 0. 0. ... 0. 0. 0.]
  [0. 1. 0. ... 0. 0. 0.]
@@ -15436,7 +15428,7 @@ X prime:
 
 y:
 [&#39;eɪ&#39; &#39;ə&#39; &#39;b&#39; ... &#39;əʊ&#39; &#39;z&#39; &#39;u&#39;]
-y prime:
+y encoded:
 [[0. 0. 0. ... 0. 0. 0.]
  [0. 0. 0. ... 0. 0. 0.]
  [0. 0. 0. ... 0. 0. 0.]
@@ -15454,10 +15446,12 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">shuffle</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code to calculate n-fold validation!</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">shuffle</span>
 
 <span class="c1"># generates a random ordering of [0..n]</span>
 <span class="c1">#   where n = len(arr)</span>
@@ -15524,7 +15518,7 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set up average and number of iteratons</span>
@@ -15540,7 +15534,7 @@ y prime:
     
     <span class="n">avg</span> <span class="o">+=</span> <span class="n">v_score</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Score: </span><span class="si">%.01f%%</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">avg</span><span class="o">/</span><span class="n">iterations</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy score: </span><span class="si">%.01f%%</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">avg</span><span class="o">/</span><span class="n">iterations</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15557,7 +15551,7 @@ y prime:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Score: 79.7%
+<pre>Accuracy score: 79.6%
 </pre>
 </div>
 </div>
@@ -15568,77 +15562,27 @@ y prime:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">plot_tree</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dtree</span> <span class="o">=</span> <span class="n">DecisionTree</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_p</span><span class="p">,</span> <span class="n">y_p</span><span class="p">)</span>
 
-<span class="n">dtree</span> <span class="o">=</span> <span class="n">DecisionTree</span><span class="p">()</span>
-<span class="n">dtree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_p</span><span class="p">,</span> <span class="n">y_p</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
-<span class="c1">#plot_tree(dtree, max_depth=10)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[42]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;Figure size 1080x1080 with 0 Axes&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_text output_subarea ">
-<pre>&lt;Figure size 1080x1080 with 0 Axes&gt;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">itransform</span><span class="p">,</span> <span class="n">otransform</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="n">word</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">split</span><span class="p">(</span><span class="n">word</span><span class="p">))</span>
-    <span class="n">word_p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">letter_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">word</span><span class="o">.</span><span class="n">flatten</span><span class="p">()),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-        
-    <span class="k">return</span> <span class="n">otransform</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">word_p</span><span class="p">))</span>
-
-<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">compatible_clust</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;word&quot;</span><span class="p">],</span> <span class="n">dtree</span><span class="p">,</span> <span class="n">letter_encoder</span><span class="p">,</span> <span class="n">phono_encoder</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">==</span> <span class="n">get_raw_chunks</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;transcription&quot;</span><span class="p">]))</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
-        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">word_p</span> <span class="o">=</span> <span class="n">letter_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
     
-    <span class="n">total</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">phono_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">dtree</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">word_p</span><span class="p">))])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;percent correct: </span><span class="si">%d</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">correct</span><span class="o">/</span><span class="n">total</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Some word predictions:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accurate predictions:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">basket: &quot;</span><span class="o">+</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;basket&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">oven: &quot;</span><span class="o">+</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;oven&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">pasta: &quot;</span><span class="o">+</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;pasta&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inaccurate predictions&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">frisbee: &quot;</span><span class="o">+</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;frisbee&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">artist: &quot;</span><span class="o">+</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;artist&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">computational: &quot;</span><span class="o">+</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;computational&quot;</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15654,68 +15598,61 @@ y prime:
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-43-bf4211fd0ffc&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> total <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">0</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span> <span class="ansi-green-fg">for</span> i<span class="ansi-blue-fg">,</span> row <span class="ansi-green-fg">in</span> compatible_clust<span class="ansi-blue-fg">.</span>iterrows<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>p <span class="ansi-blue-fg">=</span> predict<span class="ansi-blue-fg">(</span>row<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;word&#34;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> dtree<span class="ansi-blue-fg">,</span> letter_encoder<span class="ansi-blue-fg">,</span> phono_encoder<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span>     <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">(</span>p <span class="ansi-blue-fg">==</span> get_raw_chunks<span class="ansi-blue-fg">(</span>row<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;transcription&#34;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>all<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span>         correct <span class="ansi-blue-fg">+=</span> <span class="ansi-cyan-fg">1</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Some word predictions:
 
-<span class="ansi-green-fg">&lt;ipython-input-43-bf4211fd0ffc&gt;</span> in <span class="ansi-cyan-fg">predict</span><span class="ansi-blue-fg">(word, tree, itransform, otransform)</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">def</span> predict<span class="ansi-blue-fg">(</span>word<span class="ansi-blue-fg">,</span> tree<span class="ansi-blue-fg">,</span> itransform<span class="ansi-blue-fg">,</span> otransform<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span>     word <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>array<span class="ansi-blue-fg">(</span>split<span class="ansi-blue-fg">(</span>word<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg">     </span>word_p <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>letter_encoder<span class="ansi-blue-fg">.</span>transform<span class="ansi-blue-fg">(</span>word<span class="ansi-blue-fg">.</span>flatten<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> 
-<span class="ansi-green-intense-fg ansi-bold">      5</span>     <span class="ansi-green-fg">return</span> otransform<span class="ansi-blue-fg">.</span>inverse_transform<span class="ansi-blue-fg">(</span>tree<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">(</span>word_p<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">transform</span><span class="ansi-blue-fg">(self, X)</span>
-<span class="ansi-green-intense-fg ansi-bold">    730</span>                                        copy=True)
-<span class="ansi-green-intense-fg ansi-bold">    731</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 732</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_transform_new<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    733</span> 
-<span class="ansi-green-intense-fg ansi-bold">    734</span>     <span class="ansi-green-fg">def</span> inverse_transform<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> X<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">_transform_new</span><span class="ansi-blue-fg">(self, X)</span>
-<span class="ansi-green-intense-fg ansi-bold">    678</span>         <span class="ansi-blue-fg">&#34;&#34;&#34;New implementation assuming categorical input&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    679</span>         <span class="ansi-red-fg"># validation of X happens in _check_X called by _transform</span>
-<span class="ansi-green-fg">--&gt; 680</span><span class="ansi-red-fg">         </span>X_int<span class="ansi-blue-fg">,</span> X_mask <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_transform<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> handle_unknown<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>handle_unknown<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    681</span> 
-<span class="ansi-green-intense-fg ansi-bold">    682</span>         n_samples<span class="ansi-blue-fg">,</span> n_features <span class="ansi-blue-fg">=</span> X_int<span class="ansi-blue-fg">.</span>shape
-
-<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">_transform</span><span class="ansi-blue-fg">(self, X, handle_unknown)</span>
-<span class="ansi-green-intense-fg ansi-bold">    106</span> 
-<span class="ansi-green-intense-fg ansi-bold">    107</span>     <span class="ansi-green-fg">def</span> _transform<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> X<span class="ansi-blue-fg">,</span> handle_unknown<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;error&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 108</span><span class="ansi-red-fg">         </span>X_list<span class="ansi-blue-fg">,</span> n_samples<span class="ansi-blue-fg">,</span> n_features <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_check_X<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    109</span> 
-<span class="ansi-green-intense-fg ansi-bold">    110</span>         X_int <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>n_samples<span class="ansi-blue-fg">,</span> n_features<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span>np<span class="ansi-blue-fg">.</span>int<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py</span> in <span class="ansi-cyan-fg">_check_X</span><span class="ansi-blue-fg">(self, X)</span>
-<span class="ansi-green-intense-fg ansi-bold">     47</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> <span class="ansi-blue-fg">(</span>hasattr<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;iloc&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">and</span> getattr<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;ndim&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     48</span>             <span class="ansi-red-fg"># if not a dataframe, do normal check_array validation</span>
-<span class="ansi-green-fg">---&gt; 49</span><span class="ansi-red-fg">             </span>X_temp <span class="ansi-blue-fg">=</span> check_array<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     50</span>             if (not hasattr(X, &#39;dtype&#39;)
-<span class="ansi-green-intense-fg ansi-bold">     51</span>                     and np.issubdtype(X_temp.dtype, np.str_)):
-
-<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/sklearn/utils/validation.py</span> in <span class="ansi-cyan-fg">check_array</span><span class="ansi-blue-fg">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, warn_on_dtype, estimator)</span>
-<span class="ansi-green-intense-fg ansi-bold">    519</span>                     <span class="ansi-blue-fg">&#34;Reshape your data either using array.reshape(-1, 1) if &#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    520</span>                     <span class="ansi-blue-fg">&#34;your data has a single feature or array.reshape(1, -1) &#34;</span>
-<span class="ansi-green-fg">--&gt; 521</span><span class="ansi-red-fg">                     &#34;if it contains a single sample.&#34;.format(array))
-</span><span class="ansi-green-intense-fg ansi-bold">    522</span> 
-<span class="ansi-green-intense-fg ansi-bold">    523</span>         <span class="ansi-red-fg"># in the future np.flexible dtypes will be handled like object dtypes</span>
-
-<span class="ansi-red-fg">ValueError</span>: Expected 2D array, got 1D array instead:
-array=[&#39;&#39; &#39;a&#39; &#39;&#39;].
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.</pre>
+Accurate predictions:
+	basket: bæzket
+	oven: ɒvən
+	pasta: pɑztæ
+Inaccurate predictions
+	frisbee: frɪzbei
+	artist: aɪrtəzt
+	computational: kəmpʊteɪtəənəl
+</pre>
 </div>
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='5'></a></p>
+<h3 id="Ideas-for-Further-Improvement">Ideas for Further Improvement<a class="anchor-link" href="#Ideas-for-Further-Improvement">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>More data! The dataset we focused on is standard British English, also called the Queen’s English. Although this dialect is classified as the standard, the British Isles is made up of many different accents and dialects – more than 37 dialects at the last count. Dialects from other regions of Britain include: Cockney, Estuary, Yorkshire, Northern Irish, Scottish, and more!</li>
+<li>A more robust model. We currently treat each cluster as a separate entity not relating to its internal letters, which means that we cannot generalize to new clusters. This is an important area to research.</li>
+<li>Explaining data which does not match our clustering model. We hope in the future to explain ways to predict the edge-case words that are not modeled by our cluster analysis, as it’s clearly possible to predict their pronunciation by humans. This often comes down to elided clusters, but that is not the only case, and in exploring the edge cases we believe we will come to a more thorough understanding of the process in general.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='6'></a></p>
+<h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Given our favorable results, we were still bound by certain specifications, such as focusing on one language and having the predicate knowledge of some linguistic rules (knowing the alphabet and what constitutes a consonant or vowel). There are still many factors to consider when creating a prediction on a word’s pronunciation, including human interpretation, language dialects, specific rules, and even sub-regional accents that are difficult to generalize outside of our dataset. Even with these limitations, however, there is still huge potential for expansion outside of the British English dataset we focused on.</p>
+<p>Currently, there is a lack of thorough research in relationships amongst different languages as to ways which spelling and pronunciation are related. Each language itself has tried to cotify rules for pronunciation, including <a href="https://en.wikipedia.org/wiki/English_orthography#Combinations_of_vowel_letters">vowel clusters</a> in English orthography, though there hasn’t been any cross-linguistic research, as it’s yet to be explored.</p>
+<p>Ultimately, some part of pronunciation is memorization and personal interpretation. Without any given context of a word that is new or unfamiliar to the language, different people would interpret the pronunciation of the word differently in their minds. For example, if we were to make up a word in English and provide no context, two people who speak the same language in exactly the same dialect, could potentially pronounce this new word completely different.</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
