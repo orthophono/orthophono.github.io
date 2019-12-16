@@ -13113,6 +13113,14 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Download-British-English-phonemic-data">Download British English phonemic data<a class="anchor-link" href="#Download-British-English-phonemic-data">&#182;</a></h1><p>From <a href="http://phonemicchart.com/transcribe/1000_basic_words.html"> this site</a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
@@ -13187,10 +13195,13 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcription_url</span> <span class="o">=</span> <span class="s2">&quot;/transcribe/?w=&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># the base for the transcription of any word on the site</span>
+<span class="n">transcription_url</span> <span class="o">=</span> <span class="s2">&quot;/transcribe/?w=&quot;</span>
 
+<span class="c1"># regex to match links to transcriptions</span>
 <span class="n">transcription_url_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="s2">&quot;/transcribe?w=&quot;</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;.*&quot;</span><span class="p">)</span>
 
+<span class="c1"># get all links to words</span>
 <span class="n">word_tags</span> <span class="o">=</span> <span class="n">main_site</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="n">href</span><span class="o">=</span><span class="n">transcription_url_match</span><span class="p">)</span>
 
 <span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13233,15 +13244,21 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_data</span> <span class="o">=</span> <span class="p">[]</span>
 
+<span class="c1"># for each word</span>
 <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>    
+    <span class="c1"># requaest the site</span>
     <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">site</span><span class="o">+</span><span class="n">transcription_url</span><span class="o">+</span><span class="n">word</span><span class="p">)</span>
     
+    <span class="c1"># if it goes through</span>
     <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;word </span><span class="si">%s</span><span class="s2"> not downloaded properly&quot;</span><span class="o">%</span><span class="k">word</span>)
     <span class="k">else</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># parse the site to grab the transcription</span>
             <span class="n">transcription</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">content</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="o">+</span><span class="s2">&quot;:&quot;</span><span class="o">+</span><span class="n">transcription</span><span class="p">)</span>
+            
+            <span class="c1"># add it to the transcription list</span>
             <span class="n">word_data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;word&quot;</span><span class="p">:</span> <span class="n">word</span><span class="p">,</span> <span class="s2">&quot;transcription&quot;</span><span class="p">:</span> <span class="n">transcription</span><span class="p">})</span>
         <span class="k">except</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;word </span><span class="si">%s</span><span class="s2"> not downloaded properly&quot;</span><span class="o">%</span><span class="k">word</span>)
@@ -14273,7 +14290,8 @@ zoo:&#39;zu:
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_frame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">word_data</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># export to a dataframe</span>
+<span class="n">word_frame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">word_data</span><span class="p">)</span>
 <span class="n">word_frame</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;british.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
